@@ -143,6 +143,11 @@ if (JavaVersion.current().isJava8Compatible()) {
 }
 
 publishing {
+  repositories {
+    maven {
+      url "file:///Users/ychen/Projects/repository/"
+    }
+  }
   publications {
     mavenJava(MavenPublication) {
       from components.java
